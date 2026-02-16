@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    
+
+  </head>
+    
+  <body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Premium Movie Business Solution - Trusted by 500+</title>
+    <style>
+        /* --- RESET & BASE --- */
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Inter', -apple-system, sans-serif; }
+        body { background-color: #050505; color: #ffffff; overflow-x: hidden; -webkit-font-smoothing: antialiased; }
+
+        /* --- STICKY COUNTDOWN --- */
+        .top-timer {
+            background: #ff3e3e;
+            color: #fff;
+            text-align: center;
+            padding: 12px;
+            font-weight: 900;
+            font-size: 1.1rem;
+            position: sticky;
+            top: 0;
+            z-index: 999;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            letter-spacing: 1px;
+        }
+
+        .header {
+            text-align: center;
+            padding: 50px 20px;
+            background: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #050505 100%);
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            background: linear-gradient(to bottom, #fff, #999);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-weight: 900;
+        }
+
+        /* --- TRUST BADGE --- */
+        .trust-hero {
+            display: inline-block;
+            background: rgba(0, 255, 136, 0.1);
+            color: #00ff88;
+            padding: 8px 20px;
+            border-radius: 50px;
+            border: 1px solid #00ff88;
+            font-size: 0.9rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        /* --- PRICING --- */
+        .price-card {
+            background: #111;
+            border: 1px solid #333;
+            border-radius: 25px;
+            padding: 35px 15px;
+            max-width: 360px;
+            margin: 0 auto 40px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+        }
+        .old-p { color: #ff4d4d; text-decoration: line-through; font-size: 1.3rem; font-weight: 700; }
+        .new-p { font-size: 4.5rem; color: #00ff88; font-weight: 950; margin: 10px 0; }
+        .hosting-tag { color: #00a2ff; font-weight: 800; font-size: 1rem; margin-top: 10px; display: block; }
+
+        /* --- ZOOMED OUT PREVIEW GRID (2+1 Mobile) --- */
+        .phone-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 1000px;
+            margin: 0 auto 50px;
+            padding: 0 10px;
+        }
+
+        .phone-wrapper {
+            flex: 0 1 47%; /* 2 per row */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .phone-frame {
+            width: 100%;
+            height: 380px; 
+            border: 6px solid #1a1a1a;
+            border-radius: 22px;
+            position: relative;
+            background: #111;
+            overflow: hidden;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+        }
+
+        .iframe-container {
+            width: 200%; 
+            height: 200%; 
+            transform: scale(0.5); 
+            transform-origin: 0 0;
+        }
+
+        iframe { width: 100%; height: 100%; border: none; background: #fff; }
+
+        .site-label { margin-top: 12px; font-size: 0.8rem; color: #00a2ff; font-weight: 800; text-transform: uppercase; }
+
+        /* --- VIDEO & FEATURES --- */
+        .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+        .video-card { background: #0a0a0a; border-radius: 20px; padding: 20px; margin-bottom: 30px; border: 1px solid #222; }
+        .video-card h2 { font-size: 1.1rem; margin-bottom: 15px; }
+        video { width: 100%; border-radius: 12px; }
+
+        .feature-item {
+            background: #0d0d0d;
+            padding: 25px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+            border-left: 5px solid #0088cc;
+        }
+        .feature-item h3 { color: #00a2ff; margin-bottom: 10px; font-size: 1.2rem; }
+        .feature-item p { color: #aaa; font-size: 0.95rem; line-height: 1.6; }
+
+        /* --- TRUST PROOF SECTION --- */
+        .trust-stats {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin: 40px 0;
+            background: #111;
+            padding: 20px;
+            border-radius: 20px;
+        }
+        .stat-box h4 { color: #00ff88; font-size: 1.5rem; }
+        .stat-box p { font-size: 0.8rem; color: #666; font-weight: 700; }
+
+        /* --- CTA --- */
+        .cta-section { text-align: center; padding: 60px 20px; background: #000; }
+        .cta-btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #0088cc, #00ff88);
+            color: #000;
+            padding: 22px 60px;
+            border-radius: 100px;
+            text-decoration: none;
+            font-weight: 900;
+            font-size: 1.5rem;
+            box-shadow: 0 15px 40px rgba(0, 255, 136, 0.3);
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse { 0% { transform: scale(1); } 50% { transform: scale(1.05); } 100% { transform: scale(1); } }
+    </style>
+</head>
+<body>
+
+    <div class="top-timer">
+        ⏳ LIMITED OFFER ENDS IN: <span id="timer-val">22:00:00</span>
+    </div>
+
+    <div class="header">
+        <div class="trust-hero">✓ Trusted by 500+ Active Site Owners</div>
+        <h1>Premium Movie Website<br>Master Solution</h1>
+        
+        <div class="price-card">
+            <div class="old-p">₹10,000</div>
+            <div class="new-p">₹999</div>
+            <span class="hosting-tag">FREE HOSTING FOR LIFETIME</span>
+            <div style="color: #666; font-weight: 600; font-size: 0.8rem; margin-top: 10px;">No Hidden Charges • 24-Hour Setup</div>
+        </div>
+    </div>
+
+    <div class="phone-grid">
+        <div class="phone-wrapper">
+            <div class="phone-frame">
+                <div class="iframe-container"><iframe src="https://smartsaathi.in"></iframe></div>
+            </div>
+            <div class="site-label">SEO Master Layout</div>
+        </div>
+
+        <div class="phone-wrapper">
+            <div class="phone-frame">
+                <div class="iframe-container"><iframe src="https://cinezuva.online"></iframe></div>
+            </div>
+            <div class="site-label">Premium Cine UI</div>
+        </div>
+
+        <div class="phone-wrapper" style="flex: 0 1 60%;"> 
+            <div class="phone-frame">
+                <div class="iframe-container"><iframe src="https://smartsaathi.live"></iframe></div>
+            </div>
+            <div class="site-label">Live Player System</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="trust-stats">
+            <div class="stat-box"><h4>500+</h4><p>HAPPY USERS</p></div>
+            <div class="stat-box"><h4>24/7</h4><p>SUPPORT</p></div>
+            <div class="stat-box"><h4>₹0</h4><p>HOSTING COST</p></div>
+        </div>
+
+        <div class="video-card">
+            <h2>🚀 SEO & Google Ranking Proof</h2>
+            <video controls muted playsinline>
+                <source src="https://github.com/ankitfjjiu/Ads-video-2/raw/refs/heads/main/lv_0_20260216080425.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="video-card">
+            <h2>📈 Traffic & User Analytics</h2>
+            <video controls muted playsinline>
+                <source src="https://github.com/ankitfjjiu/Ads-video-2/raw/refs/heads/main/lv_0_20260216081430.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="feature-item">
+            <h3>🎨 On-Demand Custom Design</h3>
+            <p>We build your website exactly the way you want it. Whether it's a specific "X-Y Design" or custom features, our team delivers high-quality results tailored to your vision.</p>
+        </div>
+
+        <div class="feature-item">
+            <h3>🔐 Secured Admin Dashboard</h3>
+            <p>Complete peace of mind with a private Admin Panel protected by Gmail Login and Encrypted Passwords. Manage movies and ads with full security.</p>
+        </div>
+
+        <div class="feature-item">
+            <h3>☁️ No Hosting Needed - Lifetime Free</h3>
+            <p>Save thousands every year! We provide a high-speed server solution with zero monthly hosting fees. Your site stays online 24/7 for free.</p>
+        </div>
+
+        <div class="feature-item">
+            <h3>⚡ One-Click Bulk Movie Upload</h3>
+            <p>Don't waste time on manual entries. Our system allows you to upload hundreds of movies and auto-embed player links in just one click.</p>
+        </div>
+
+        <div class="feature-item">
+            <h3>📖 Full A-Z Master Guide</h3>
+            <p>From day one, we guide you on how to set up, get traffic, and maximize your earnings using the best ad networks in the industry.</p>
+        </div>
+    </div>
+
+    <div class="cta-section">
+        <p style="color: #555; margin-bottom: 25px; font-weight: 700;">Start Your Movie Business Journey Today!</p>
+        <a href="https://t.me/Smartsaathipartnership" class="cta-btn">BUY NOW OR CONTACT US @ ₹999 ➤</a>
+    </div>
+
+    <script>
+        // Persistent Timer Logic
+        const display = document.getElementById('timer-val');
+        let timeLeft = localStorage.getItem('final_sale_timer') || 22 * 3600;
+
+        function updateTimer() {
+            if (timeLeft <= 0) timeLeft = 22 * 3600;
+            let h = Math.floor(timeLeft / 3600);
+            let m = Math.floor((timeLeft % 3600) / 60);
+            let s = timeLeft % 60;
+            display.innerText = `${h.toString().padStart(2, '0')}:${m.toString().padStart(2, '0')}:${s.toString().padStart(2, '0')}`;
+            timeLeft--;
+            localStorage.setItem('final_sale_timer', timeLeft);
+        }
+        setInterval(updateTimer, 1000);
+        updateTimer();
+        document.addEventListener('contextmenu', e => e.preventDefault());
+    </script>
+</body>
+</html>
+    
+  </body>
+  
+</html>
