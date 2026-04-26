@@ -26,7 +26,7 @@
 
         .header {
             text-align: center;
-            padding: 50px 20px;
+            padding: 50px 20px 20px;
             background: radial-gradient(circle at 50% 0%, #1a1a1a 0%, #050505 100%);
         }
 
@@ -58,14 +58,14 @@
             border-radius: 25px;
             padding: 35px 15px;
             max-width: 360px;
-            margin: 0 auto 40px;
+            margin: 0 auto 30px;
             box-shadow: 0 10px 40px rgba(0,0,0,0.5);
         }
         .old-p { color: #ff4d4d; text-decoration: line-through; font-size: 1.3rem; font-weight: 700; }
         .new-p { font-size: 4.5rem; color: #00ff88; font-weight: 950; margin: 10px 0; }
         .hosting-tag { color: #00a2ff; font-weight: 800; font-size: 1rem; margin-top: 10px; display: block; }
 
-        /* --- UPDATED PHONE GRID (2 per row) --- */
+        /* --- PHONE GRID --- */
         .phone-grid {
             display: flex;
             flex-wrap: wrap;
@@ -106,7 +106,7 @@
 
         .site-label { margin-top: 12px; font-size: 0.75rem; color: #00a2ff; font-weight: 800; text-transform: uppercase; text-align: center; }
 
-        /* --- EARNINGS PROOF SECTION --- */
+        /* --- EARNINGS PROOF INTERACTIVE --- */
         .earnings-section { text-align: center; margin: 40px 0; }
         .earnings-btn {
             background: #222;
@@ -121,7 +121,7 @@
         .earnings-images { display: none; margin-top: 20px; padding: 0 10px; }
         .earnings-images img { width: 100%; border-radius: 15px; margin-bottom: 15px; border: 1px solid #333; }
 
-        /* --- FEATURES --- */
+        /* --- FEATURES & VIDEO --- */
         .container { max-width: 800px; margin: 0 auto; padding: 20px; }
         .video-card { background: #0a0a0a; border-radius: 20px; padding: 20px; margin-bottom: 30px; border: 1px solid #222; }
         video { width: 100%; border-radius: 12px; }
@@ -171,22 +171,25 @@
         </div>
     </div>
 
+    <div style="text-align: center; padding: 0 15px; margin-bottom: 40px;">
+        <img src="https://ohyszjcmnnoqpaegozxq.supabase.co/storage/v1/object/public/images/ss-1777213003538-dfx8qcd78.webp" 
+             alt="User Success Proof" 
+             style="width: 100%; max-width: 500px; border-radius: 15px; border: 1px solid #333; box-shadow: 0 10px 30px rgba(0,255,136,0.2);">
+    </div>
+
     <div class="phone-grid">
         <div class="phone-wrapper">
             <div class="phone-frame"><div class="iframe-container"><iframe src="https://www.filmyzuva.com/"></iframe></div></div>
             <div class="site-label">Filmyzuva Layout</div>
         </div>
-
         <div class="phone-wrapper">
             <div class="phone-frame"><div class="iframe-container"><iframe src="https://www.smarsaathikit.com/"></iframe></div></div>
             <div class="site-label">SmarsaathiKit Multi-Tool</div>
         </div>
-
         <div class="phone-wrapper">
             <div class="phone-frame"><div class="iframe-container"><iframe src="https://movieshub.in"></iframe></div></div>
             <div class="site-label">SEO Master Layout</div>
         </div>
-
         <div class="phone-wrapper">
             <div class="phone-frame"><div class="iframe-container"><iframe src="https://ttttms.vercel.app/"></iframe></div></div>
             <div class="site-label">Premium Cine UI</div>
@@ -210,11 +213,6 @@
         </div>
 
         <div class="feature-item">
-            <h3>📈 Auto-Ranking SEO System</h3>
-            <p>Aapki website Google Discover aur Search mein fast rank karegi. Hum aise meta-tags aur schemas setup karte hain jo movies ko automatic index karwate hain.</p>
-        </div>
-
-        <div class="feature-item">
             <h3>⚡ Ad-Network Ready</h3>
             <p>AdSense, Adsterra, ya HilltopAds - hum sabhi networks ke liye optimize karke dete hain taaki aapka CPM high rahe aur earning pehle din se shuru ho.</p>
         </div>
@@ -231,13 +229,11 @@
     </div>
 
     <script>
-        // Toggle Earnings Gallery
         function showEarnings() {
             const gallery = document.getElementById('earnings-gallery');
             gallery.style.display = gallery.style.display === 'block' ? 'none' : 'block';
         }
 
-        // Persistent Timer Logic
         const display = document.getElementById('timer-val');
         let timeLeft = localStorage.getItem('final_sale_timer') || 22 * 3600;
 
