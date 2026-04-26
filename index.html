@@ -39,7 +39,6 @@
             font-weight: 900;
         }
 
-        /* --- TRUST BADGE --- */
         .trust-hero {
             display: inline-block;
             background: rgba(0, 255, 136, 0.1);
@@ -66,7 +65,7 @@
         .new-p { font-size: 4.5rem; color: #00ff88; font-weight: 950; margin: 10px 0; }
         .hosting-tag { color: #00a2ff; font-weight: 800; font-size: 1rem; margin-top: 10px; display: block; }
 
-        /* --- ZOOMED OUT PREVIEW GRID (2+1 Mobile) --- */
+        /* --- UPDATED PHONE GRID (2 per row) --- */
         .phone-grid {
             display: flex;
             flex-wrap: wrap;
@@ -78,15 +77,16 @@
         }
 
         .phone-wrapper {
-            flex: 0 1 47%; /* 2 per row */
+            flex: 0 1 47%;
             display: flex;
             flex-direction: column;
             align-items: center;
+            margin-bottom: 20px;
         }
 
         .phone-frame {
             width: 100%;
-            height: 380px; 
+            height: 320px; 
             border: 6px solid #1a1a1a;
             border-radius: 22px;
             position: relative;
@@ -104,12 +104,26 @@
 
         iframe { width: 100%; height: 100%; border: none; background: #fff; }
 
-        .site-label { margin-top: 12px; font-size: 0.8rem; color: #00a2ff; font-weight: 800; text-transform: uppercase; }
+        .site-label { margin-top: 12px; font-size: 0.75rem; color: #00a2ff; font-weight: 800; text-transform: uppercase; text-align: center; }
 
-        /* --- VIDEO & FEATURES --- */
+        /* --- EARNINGS PROOF SECTION --- */
+        .earnings-section { text-align: center; margin: 40px 0; }
+        .earnings-btn {
+            background: #222;
+            color: #00ff88;
+            padding: 15px 30px;
+            border-radius: 12px;
+            border: 1px dashed #00ff88;
+            cursor: pointer;
+            font-weight: 800;
+            font-size: 1.1rem;
+        }
+        .earnings-images { display: none; margin-top: 20px; padding: 0 10px; }
+        .earnings-images img { width: 100%; border-radius: 15px; margin-bottom: 15px; border: 1px solid #333; }
+
+        /* --- FEATURES --- */
         .container { max-width: 800px; margin: 0 auto; padding: 20px; }
         .video-card { background: #0a0a0a; border-radius: 20px; padding: 20px; margin-bottom: 30px; border: 1px solid #222; }
-        .video-card h2 { font-size: 1.1rem; margin-bottom: 15px; }
         video { width: 100%; border-radius: 12px; }
 
         .feature-item {
@@ -121,19 +135,6 @@
         }
         .feature-item h3 { color: #00a2ff; margin-bottom: 10px; font-size: 1.2rem; }
         .feature-item p { color: #aaa; font-size: 0.95rem; line-height: 1.6; }
-
-        /* --- TRUST PROOF SECTION --- */
-        .trust-stats {
-            display: flex;
-            justify-content: space-around;
-            text-align: center;
-            margin: 40px 0;
-            background: #111;
-            padding: 20px;
-            border-radius: 20px;
-        }
-        .stat-box h4 { color: #00ff88; font-size: 1.5rem; }
-        .stat-box p { font-size: 0.8rem; color: #666; font-weight: 700; }
 
         /* --- CTA --- */
         .cta-section { text-align: center; padding: 60px 20px; background: #000; }
@@ -167,38 +168,38 @@
             <div class="old-p">₹20999</div>
             <div class="new-p">₹999</div>
             <span class="hosting-tag">FREE HOSTING FOR LIFETIME</span>
-            <div style="color: #666; font-weight: 600; font-size: 0.8rem; margin-top: 10px;">No Hidden Charges • 24-Hour Setup</div>
         </div>
     </div>
 
     <div class="phone-grid">
         <div class="phone-wrapper">
-            <div class="phone-frame">
-                <div class="iframe-container"><iframe src="https://movieshub.in"></iframe></div>
-            </div>
+            <div class="phone-frame"><div class="iframe-container"><iframe src="https://www.filmyzuva.com/"></iframe></div></div>
+            <div class="site-label">Filmyzuva Layout</div>
+        </div>
+
+        <div class="phone-wrapper">
+            <div class="phone-frame"><div class="iframe-container"><iframe src="https://www.smarsaathikit.com/"></iframe></div></div>
+            <div class="site-label">SmarsaathiKit Multi-Tool</div>
+        </div>
+
+        <div class="phone-wrapper">
+            <div class="phone-frame"><div class="iframe-container"><iframe src="https://movieshub.in"></iframe></div></div>
             <div class="site-label">SEO Master Layout</div>
         </div>
 
         <div class="phone-wrapper">
-            <div class="phone-frame">
-                <div class="iframe-container"><iframe src="https://ttttms.vercel.app/"></iframe></div>
-            </div>
-            <div class="site-label">Premium Cine UI (api base)</div>
-        </div>
-
-        <div class="phone-wrapper" style="flex: 0 1 60%;"> 
-            <div class="phone-frame">
-                <div class="iframe-container"><iframe src="https://1smartsaathi.com/"></iframe></div>
-            </div>
-            <div class="site-label">Live Player System</div>
+            <div class="phone-frame"><div class="iframe-container"><iframe src="https://ttttms.vercel.app/"></iframe></div></div>
+            <div class="site-label">Premium Cine UI</div>
         </div>
     </div>
 
     <div class="container">
-        <div class="trust-stats">
-            <div class="stat-box"><h4>500+</h4><p>HAPPY USERS</p></div>
-            <div class="stat-box"><h4>24/7</h4><p>SUPPORT</p></div>
-            <div class="stat-box"><h4>₹0</h4><p>HOSTING COST</p></div>
+        <div class="earnings-section">
+            <button class="earnings-btn" onclick="showEarnings()">💰 CLICK TO VIEW EARNINGS PROOF</button>
+            <div id="earnings-gallery" class="earnings-images">
+                <img src="https://ohyszjcmnnoqpaegozxq.supabase.co/storage/v1/object/public/images/ss-1777212699977-augf3qt6m.webp" alt="Proof 1">
+                <img src="https://ohyszjcmnnoqpaegozxq.supabase.co/storage/v1/object/public/images/ss-1777212699994-2aea24iws.webp" alt="Proof 2">
+            </div>
         </div>
 
         <div class="video-card">
@@ -208,45 +209,34 @@
             </video>
         </div>
 
-        <div class="video-card">
-            <h2>📈 Traffic & User Analytics</h2>
-            <video controls muted playsinline>
-                <source src="https://github.com/ankitfjjiu/Ads-video-2/raw/refs/heads/main/lv_0_20260216081430.mp4" type="video/mp4">
-            </video>
+        <div class="feature-item">
+            <h3>📈 Auto-Ranking SEO System</h3>
+            <p>Aapki website Google Discover aur Search mein fast rank karegi. Hum aise meta-tags aur schemas setup karte hain jo movies ko automatic index karwate hain.</p>
         </div>
 
         <div class="feature-item">
-            <h3>🎨 On-Demand Custom Design</h3>
-            <p>We build your website exactly the way you want it. Whether it's a specific "X-Y Design" or custom features, our team delivers high-quality results tailored to your vision.</p>
+            <h3>⚡ Ad-Network Ready</h3>
+            <p>AdSense, Adsterra, ya HilltopAds - hum sabhi networks ke liye optimize karke dete hain taaki aapka CPM high rahe aur earning pehle din se shuru ho.</p>
         </div>
 
         <div class="feature-item">
-            <h3>🔐 Secured Admin Dashboard</h3>
-            <p>Complete peace of mind with a private Admin Panel protected by Gmail Login and Encrypted Passwords. Manage movies and ads with full security.</p>
-        </div>
-
-        <div class="feature-item">
-            <h3>☁️ No Hosting Needed - Lifetime Free</h3>
-            <p>Save thousands every year! We provide a high-speed server solution with zero monthly hosting fees. Your site stays online 24/7 for free.</p>
-        </div>
-
-        <div class="feature-item">
-            <h3>⚡ One-Click Bulk Movie Upload</h3>
-            <p>Don't waste time on manual entries. Our system allows you to upload hundreds of movies and auto-embed player links in just one click.</p>
-        </div>
-
-        <div class="feature-item">
-            <h3>📖 Full A-Z Master Guide</h3>
-            <p>From day one, we guide you on how to set up, get traffic, and maximize your earnings using the best ad networks in the industry.</p>
+            <h3>🎨 Custom Branding</h3>
+            <p>Aapke brand ke hisab se colors, logo aur fonts customize kiye jayenge. Professional look jo users ka trust jeete.</p>
         </div>
     </div>
 
     <div class="cta-section">
-        <p style="color: #555; margin-bottom: 25px; font-weight: 700;">Start Your Movie Business Journey Today!</p>
-        <a href="https://t.me/Linkmastercloudbot" class="cta-btn">BUY NOW OR CONTACT US @ ₹999 ➤</a>
+        <a href="https://t.me/Linkmastercloudbot" class="cta-btn">BUY NOW @ ₹999 ➤</a>
+        <p style="color: #555; margin-top: 20px; font-weight: 700;">24/7 Premium Support Included</p>
     </div>
 
     <script>
+        // Toggle Earnings Gallery
+        function showEarnings() {
+            const gallery = document.getElementById('earnings-gallery');
+            gallery.style.display = gallery.style.display === 'block' ? 'none' : 'block';
+        }
+
         // Persistent Timer Logic
         const display = document.getElementById('timer-val');
         let timeLeft = localStorage.getItem('final_sale_timer') || 22 * 3600;
@@ -262,7 +252,6 @@
         }
         setInterval(updateTimer, 1000);
         updateTimer();
-        document.addEventListener('contextmenu', e => e.preventDefault());
     </script>
 </body>
 </html>
