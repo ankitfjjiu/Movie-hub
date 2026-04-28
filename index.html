@@ -124,7 +124,8 @@
         /* --- FEATURES & VIDEO --- */
         .container { max-width: 800px; margin: 0 auto; padding: 20px; }
         .video-card { background: #0a0a0a; border-radius: 20px; padding: 20px; margin-bottom: 30px; border: 1px solid #222; }
-        video { width: 100%; border-radius: 12px; }
+        .video-card h2 { font-size: 1.1rem; margin-bottom: 15px; color: #00ff88; }
+        video { width: 100%; border-radius: 12px; border: 1px solid #333; }
 
         .feature-item {
             background: #0d0d0d;
@@ -197,6 +198,15 @@
     </div>
 
     <div class="container">
+        <div class="video-card">
+            <h2>🍿 Easy To Upload Movies (Admin Panel)</h2>
+            <video controls muted playsinline poster="https://via.placeholder.com/800x450/000/00ff88?text=Admin+Panel+Preview">
+                <source src="https://github.com/ankitpr2233-cpu/Movies-admin-/raw/refs/heads/main/VN20260428_225504.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p style="color: #888; font-size: 0.85rem; margin-top: 10px; text-align: center;">Ek click mein movie details aur links upload karein.</p>
+        </div>
+
         <div class="earnings-section">
             <button class="earnings-btn" onclick="showEarnings()">💰 CLICK TO VIEW EARNINGS PROOF</button>
             <div id="earnings-gallery" class="earnings-images">
@@ -248,6 +258,7 @@
         }
         setInterval(updateTimer, 1000);
         updateTimer();
+        document.addEventListener('contextmenu', e => e.preventDefault());
     </script>
 </body>
 </html>
